@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Boxes </title>
+<style>
+.div1{
+height:300px;
+width:300px;
+background-color:red;
+margin=40px;
+width:300px;
+}
+
+.div2{
+height:300px;
+width:300px;
+background-color:green;
+left:320px;
+right:300px;
+position:relative;
+bottom:300px;
+}
+
+.div3{
+height:300px;
+width:300px;
+background-color:yellow;
+position:relative;
+bottom:280px;
+margin=40px;
+}
+
+.div4{
+height:300px;
+width:300px;
+background-color:blue;
+left:320px;
+bottom:580px;
+position:relative;
+}
+
+#btn1{
+height:10px;
+bottom: 550px;
+background-color: pink;
+position:relative;
+padding: 15px 50px;
+text-align: center;
+text-decoration: none;
+cursor:pointer;
+}
+
+#btn2{
+height:10px;
+bottom: 550px;
+background-color: pink;
+position:relative;
+padding: 15px 50px;
+left: 30px;
+text-align: center;
+text-decoration: none;
+cursor:pointer;
+}
+
+#btn3{
+height:10px;
+bottom: 550px;
+left: 70px;
+background-color: pink;
+position:relative;
+padding: 15px 70px;
+text-align: center;
+text-decoration: none;
+cursor:pointer;
+}
+
+</style>
+</head>
+<body>
+
+ <div class="div1">
+hello
+</div>
+<div class ="div2">
+hello
+</div>
+<div class ="div3">
+hello
+</div>
+<div class ="div4">
+hello
+</div>
+
+
+<input type="button" id="btn1"value="clockwise" onclick="run()"> 
+
+<input type="button" id="btn2"value="anticlockwise" onclick="run()"> 
+<input type="button" id="btn3"value="stop" onclick="stop()"> 
+
+<script type="text/javascript">
+
+
+ function run() {
+ document.querySelector( ' .div1 ').style.transform = 'rotate(90deg)' ;
+ document.querySelector( ' .div2 ').style.transform = 'rotate(90deg)' ;
+ document.querySelector( ' .div3 ').style.transform = 'rotate(90deg)' ;
+ document.querySelector( ' .div4 ').style.transform = 'rotate(90deg)' ;	 
+}
+
+
+function stop(){
+ document.querySelector( ' .div1 ').style.transform = 'rotate(360deg)' ;
+ document.querySelector( ' .div2 ').style.transform = 'rotate(360deg)' ;
+ document.querySelector( ' .div3 ').style.transform = 'rotate(360deg)' ;
+ document.querySelector( ' .div4 ').style.transform = 'rotate(360deg)' ;	 
+}
+</script>
+</body>
+</html>
